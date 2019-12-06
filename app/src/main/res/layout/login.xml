@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@null">
+
+	<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+		android:id="@+id/bar"
+	>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+		</android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+	
+	<android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+		card_view:cardUseCompatPadding="true"
+
+		card_view:contentPaddingRight="0dp"
+		card_view:contentPaddingTop="0dp"
+		card_view:contentPaddingBottom="0dp"
+        android:layout_below="@+id/bar"
+	>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:padding="5dp"
+		>
+			<android.support.design.widget.TextInputLayout
+				android:id="@+id/layout_name"
+				android:layout_width="match_parent"
+
+				android:layout_height="wrap_content">
+
+				<EditText
+					android:id="@+id/input_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:drawablePadding="5dp"
+					android:drawableTint="@color/colorPrimary"
+
+					android:inputType="textEmailAddress|phone"
+					android:drawableLeft="@drawable/people"
+
+					app:backgroundTint="@color/colorPrimary" 
+					android:hint="Email yanyu cg telephone" />
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.design.widget.TextInputLayout
+				android:id="@+id/layout_email"
+				android:layout_width="match_parent"
+				android:layout_below="@+id/layout_name"
+
+				android:layout_height="wrap_content">
+
+				<EditText
+					android:id="@+id/input_email"
+					app:backgroundTint="@color/colorPrimary" 
+					android:drawableLeft="@android:drawable/ic_secure"
+					android:drawablePadding="5dp"
+					android:drawableTint="@color/colorPrimary"
+
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textPassword"
+					android:hint="Ijambobanga ryanyu" />
+			</android.support.design.widget.TextInputLayout>
+
+			
+			<Button android:id="@+id/injira"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Injira"
+				android:layout_below="@+id/layout_email"
+
+				android:background="@color/colorPrimary"
+				android:layout_marginTop="10dp"
+				android:textColor="@android:color/white"/>
+			
+			
+			
+		</RelativeLayout>
+	</android.support.v7.widget.CardView>
+</RelativeLayout>

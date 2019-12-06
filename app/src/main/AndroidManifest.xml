@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itdevsltd.searcher">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.itdevsltd.searcher.english.MainActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:name=".register"
+            android:label="Registration">
+
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:name="com.itdevsltd.searcher.english.register"
+            android:label="Registration">
+
+        </activity>
+
+        <activity
+            android:excludeFromRecents="true"
+            android:allowBackup="true"
+            android:theme="@style/dialog"
+
+            android:resizeableActivity = "true"
+
+            android:name=".HomeActivity">
+
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:allowBackup="true"
+            android:theme="@style/dialog"
+
+            android:resizeableActivity = "true"
+
+            android:name="com.itdevsltd.searcher.english.HomeActivity">
+
+        </activity>
+
+
+        <activity
+            android:excludeFromRecents="true"
+            android:allowBackup="true"
+            android:theme="@style/dialog"
+
+            android:name=".nataye"
+            android:label="Nataye">
+
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:allowBackup="true"
+            android:theme="@style/dialog"
+
+            android:name="com.itdevsltd.searcher.english.nataye"
+            android:label="Nataye">
+
+        </activity>
+
+
+        <activity
+            android:excludeFromRecents="true"
+            android:allowBackup="true"
+            android:theme="@style/dialog"
+
+            android:name=".natoye"
+            android:label="Natoye">
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:allowBackup="true"
+            android:theme="@style/dialog"
+
+            android:name="com.itdevsltd.searcher.english.natoye"
+            android:label="Natoye">
+        </activity>
+
+        <activity
+            android:excludeFromRecents="true"
+            android:allowBackup="true"
+            android:theme="@style/dialog"
+
+            android:name=".login"
+            android:label="Injira">
+
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:allowBackup="true"
+            android:theme="@style/dialog"
+
+            android:name="com.itdevsltd.searcher.english.login"
+            android:label="Injira">
+
+        </activity>
+        <activity android:name=".settings"/>
+    </application>
+
+</manifest>

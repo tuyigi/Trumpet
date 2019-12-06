@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+	android:background="@drawable/trumpet_bg"
+	>
+
+	<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+		android:id="@+id/bar"
+		>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+			
+			
+		</android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+	
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+	    android:background="#80000000"
+		android:layout_below="@+id/bar"
+		
+	>
+	<ImageView
+		android:layout_height="120dp"
+		android:layout_width="120dp"
+		android:src="@drawable/icon"
+		android:layout_below="@+id/card_view"
+		android:layout_centerInParent="true"
+		android:layout_margin="5dp"
+		android:id="@+id/ico"
+		android:visibility="invisible"
+		/>
+		
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/trump"
+			android:textColor="#ffffff"
+			android:text="@string/app_name"
+			android:layout_below="@+id/ico"
+			android:textSize="40dp"
+			android:layout_margin="10dp"
+			android:layout_centerInParent="true"/>
+		
+	
+	
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/desc"
+		android:textSize="16dp"
+		android:textStyle="bold"
+		android:textAlignment="center"
+	      android:textColor="#ffffff"
+		  android:text="@string/desc"
+		  android:layout_centerInParent="true"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginBottom="5dp"
+		android:layout_above="@+id/natoye"
+		
+		  />
+	
+	  
+	  <Button
+		  android:id="@+id/natoye"
+		  android:layout_height="wrap_content"
+		  android:layout_width="150dp"
+		  android:text="Natoye"
+		  android:textColor="#ffffff"
+		  android:layout_alignParentBottom="true"
+		  android:layout_alignParentLeft="true"
+		  android:layout_margin="20dp"
+		  android:background="@drawable/button_background1"
+		  />
+	  
+		<Button
+			android:id="@+id/nataye"
+			android:layout_height="wrap_content"
+			android:layout_width="150dp"
+			android:text="Nataye"
+			android:textColor="#ffffff"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_margin="20dp"
+			android:background="@drawable/button_background2"
+			
+			/>
+		
+		<android.support.v7.widget.CardView
+			android:id="@+id/card_view"
+			xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			card_view:cardBackgroundColor="#fff"
+			card_view:cardCornerRadius="3dp"
+			card_view:cardElevation="5dp"
+			card_view:cardUseCompatPadding="true"
+			android:layout_below="@+id/bar"
+			android:layout_marginTop="20dp"
+		
+			
+			card_view:contentPaddingRight="0dp"
+			card_view:contentPaddingTop="0dp"
+			card_view:contentPaddingBottom="0dp"
+		>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="10dp"
+			>
+				<EditText
+					android:id="@+id/query"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="Search here..."
+					android:background="#ffffff"
+					android:textColor="#717171"
+					android:textColorHint="#C7C7C7"
+				/>
+
+			</RelativeLayout>
+		</android.support.v7.widget.CardView>
+
+		
+		
+		
+		
+		
+		
+	<android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+		card_view:cardUseCompatPadding="true"
+		android:layout_marginTop="-10dp"
+		
+	android:layout_below="@+id/card_view"
+		card_view:contentPaddingRight="0dp"
+		card_view:contentPaddingTop="0dp"
+		card_view:contentPaddingBottom="0dp"
+		
+		android:visibility="gone"
+	>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			
+		>
+		
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:id="@+id/rl"
+				>
+		
+				<ImageView
+					android:id="@+id/close"
+					android:layout_height="30dp"
+					android:layout_width="30dp"
+					android:src="@drawable/close"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/progress"
+					
+				/>
+
+
+				<ProgressBar
+					style="?android:attr/progressBarStyleHorizontal"
+					android:indeterminate="true"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/progress"
+					android:visibility="gone"
+					android:layout_alignParentTop="true"
+                  android:layout_marginTop="-5dp"
+					/>
+			
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/loading"
+					android:textColor="#000"
+					android:text="Enter something to search"
+					android:textSize="16dp"
+					android:layout_margin="2dp"
+					android:layout_centerInParent="true"
+					android:layout_below="@+id/progress"
+					
+					/>
+				
+			
+			
+			</RelativeLayout>
+			
+		
+		
+			
+	<android.support.v7.widget.RecyclerView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+
+		android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+		android:background="#C6C6C6"
+		android:layout_below="@+id/rl"
+		
+		/>
+		</RelativeLayout>
+	</android.support.v7.widget.CardView>
+		</RelativeLayout>
+		
+		
+		
+		
+		
+		
+	<android.support.v7.widget.CardView
+        android:id="@+id/card_view3"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+		card_view:cardUseCompatPadding="true"
+        card_view:contentPaddingRight="0dp"
+		card_view:contentPaddingTop="0dp"
+		card_view:contentPaddingBottom="0dp"
+		android:layout_below="@+id/bar"
+		android:visibility="gone"
+	>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:padding="5dp"
+		>
+		
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:id="@+id/found"
+				android:textColor="#000"
+				android:text="Iki gikoresho cyaba ari icyanyu? cyangwa c mwaragitoraguye?,nimushyiremo nimero ikiranga yose kugirango tubashe kubimenya!"
+				android:textSize="16dp"
+				android:textStyle="bold"
+				android:layout_marginTop="2dp"
+				android:layout_marginLeft="2dp"
+				android:layout_marginRight="2dp"
+				android:layout_marginBottom="10dp"
+				
+				android:layout_alignParentTop="true"
+				android:layout_toLeftOf="@+id/close2"
+			/>
+		
+		
+			<ImageView
+				android:id="@+id/close2"
+				android:layout_height="30dp"
+				android:layout_width="30dp"
+				android:src="@drawable/close"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"
+
+			/>
+		
+		
+			<ImageView
+				android:layout_height="50dp"
+				android:layout_width="50dp"
+				android:src="@drawable/document"
+				android:id="@+id/tp"
+				android:layout_alignParentLeft="true"
+				android:layout_margin="2dp"
+			
+				android:layout_below="@+id/found"
+				
+				/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text=" here"
+				android:id="@+id/title"
+				android:textColor="#000000"
+				android:layout_margin="2dp"
+				android:textSize="16dp"
+				android:layout_toRightOf="@+id/tp"
+				android:textStyle="bold"
+				android:layout_below="@+id/found"
+				
+				/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text=" here"
+				android:id="@+id/owner"
+				android:textColor="#A3A3A3"
+				android:layout_marginLeft="2dp"
+				android:textSize="16dp"
+				android:layout_toRightOf="@+id/tp"
+				android:layout_below="@+id/title"
+
+			/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="here"
+				android:id="@+id/serial"
+				android:textColor="#A3A3A3"
+				android:layout_margin="2dp"
+				android:layout_below="@+id/owner"
+				android:layout_toRightOf="@+id/tp"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="here is address"
+				android:id="@+id/description"
+				android:textColor="#A3A3A3"
+				android:layout_margin="2dp"
+				android:layout_below="@+id/serial"
+				android:layout_toRightOf="@+id/tp"
+			/>
+		
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="here"
+				android:id="@+id/status"
+				android:textColor="#C02E24"
+				android:layout_margin="2dp"
+				android:layout_below="@+id/owner"
+				android:layout_alignParentRight="true"
+			/>
+		
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dp"
+				android:id="@+id/hidden"
+				android:layout_below="@+id/description"
+				android:visibility="gone"
+				android:layout_toRightOf="@+id/tp"
+				
+			>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text="here"
+					android:id="@+id/infs"
+					android:textColor="#A3A3A3"
+					android:layout_margin="2dp"
+					android:textStyle="bold"
+				/>
+			
+				<Button
+					android:id="@+id/call"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:text="call"
+					android:background="@drawable/button_background1"
+					android:layout_marginTop="3dp"
+					android:layout_marginBottom="3dp"
+					android:textColor="#fff"
+					android:layout_alignParentLeft="true"
+					android:layout_below="@+id/infs"
+					
+				/>
+			
+				<Button
+					android:id="@+id/message"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:text="message"
+					android:background="@drawable/button_background1"
+					android:layout_marginTop="3dp"
+					android:layout_marginBottom="3dp"
+					android:layout_marginRight="20dp"
+					
+					android:textColor="#fff"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/infs"
+
+				/>
+				
+			</RelativeLayout>
+		
+		
+			<android.support.design.widget.TextInputLayout
+				android:id="@+id/layout_serial"
+				android:layout_width="match_parent"
+				android:layout_below="@+id/hidden"
+				android:layout_marginTop="10dp"
+				
+				android:layout_height="wrap_content">
+
+				<EditText
+					android:id="@+id/input_serial"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:drawablePadding="5dp"
+					android:drawableTint="@color/colorPrimary"
+
+					android:drawableLeft="@drawable/people"
+
+					app:backgroundTint="@color/colorPrimary" 
+					android:hint="Shyiramo nimero ikiranga yose" />
+			</android.support.design.widget.TextInputLayout>
+		
+			<Button
+				android:id="@+id/checkbtn"
+				android:layout_width="wrap_content"
+				android:layout_height="30dp"
+				android:text="komeza"
+					android:background="@drawable/button_background1"
+				android:layout_marginTop="3dp"
+				android:layout_marginBottom="3dp"
+				android:textColor="#fff"
+				android:layout_alignParentRight="true"
+				android:layout_below="@+id/layout_serial"
+				
+				/>
+			
+			
+			</RelativeLayout>
+	</android.support.v7.widget.CardView>
+
+	
+		
+		
+		
+</RelativeLayout>

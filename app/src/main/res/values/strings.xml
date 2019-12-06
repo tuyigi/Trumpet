@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Trumpet</string>
+    <string name="action_settings">Settings</string>
+	<string name="desc">Murakaza neza kuri Trumpet, Application igufasha kubona ibyangombwa, umutungo byawe byabuze utavunitse.</string>
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+	<string-array name="documents">
+        <item>Indangamuntu</item>
+        <item>Passwport</item>
+        <item>Visa</item>
+		<item>Uruhushya rwo gutwara</item>
+        <item>Carte jaune</item>
+        <item>Icyemezo cy\'ubutaka</item>
+		<item>Tap and go</item>
+        <item>Credit card</item>
+        <item>Debit card</item>
+		<item>Pre-paid card</item>
+        <item>RSSB card</item>
+        <item>Mutuel de sante</item>
+		
+	</string-array>
+	
+	<string-array name="properties">
+        <item>Television</item>
+        <item>Radio</item>
+        <item>Fligo</item>
+		<item>Ipasi</item>
+        <item>Telephone</item>
+        <item>Ikindi</item>
+		
+	</string-array>
+    <string-array name="languages">
+        <item>Kinyarwanda</item>
+        <item>English</item>
+        <item>Francais</item>
+    </string-array>
+	
+	</resources>
